@@ -150,7 +150,7 @@ InitInterrupts	di
 	ld	(CTC2Count+1),a
 
 	nextreg 	$C4,%00000000 
-	nextreg 	$C5,%00000000		; CTC enbable interrupts
+	nextreg 	$C5,%00000100		; CTC enbable interrupts
 	nextreg 	$C6,%00000000		; Disable UART0 and UART1 interrupts.
 
 	nextreg 	$c8,%11111111
